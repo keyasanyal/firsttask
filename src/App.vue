@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav">
+      <!-- GBC START -->
+        <!-- <img src="/assets/logo2.png" id="logo"> -->
+      <!-- GBC END -->
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/all">All Tasks</router-link>
+      <router-link to="/important">Important Tasks</router-link>
+      <router-link to="/notifications">Notifications</router-link>
+      <router-link to="/login">Login</router-link>
+      <router-link to="/sign">Sign In</router-link>
+
+    </div>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+// @ is an alias to /src
+// import "./assets/javascripts/app.js";
 </script>
 
 <style>
@@ -23,6 +29,29 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+#nav {
+  padding: 0px;
+  height: 80px;
+  width: 100%;
+  background-color: none;
+}
+
+#nav a {
+  font-weight: bold;
+  color: gray;
+}
+
+#nav a.router-link-exact-active {
+  color: black;
+}
+
+#logo {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 </style>
