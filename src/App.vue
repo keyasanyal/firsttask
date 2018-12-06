@@ -35,7 +35,7 @@
   height: 80px;
   width: 100%;
   background-color: none;
-}
+  }
 
 #nav a {
   font-weight: bold;
