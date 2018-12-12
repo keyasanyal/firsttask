@@ -1,12 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './components/Home.vue';
-import About from './components/About.vue';
-import All from './components/All.vue';
-import Important from './components/Important.vue';
-import Notifications from './components/Notifications.vue';
-import Login from './components/Login.vue';
-import Sign from './components/Sign.vue';
+import Calendar from './components/Calendar.vue';
+import Add  from './components/Add.vue';
+import Work from './components/Work.vue';
+import School from './components/School.vue';
 
 
 Vue.use(Router);
@@ -19,34 +17,24 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About,
+      path: '/calendar',
+      name: 'calendar',
+      component: Calendar,
     },
     {
-      path: '/All',
-      name: 'all',
-      component: All,
+      path: '/Add',
+      name: 'add',
+      component: Add,
     },
     {
-      path: '/important',
-      name: 'important',
-      component: Important,
+      path: '/work',
+      name: 'work',
+      component: Work,
     },
     {
-      path: '/notifications',
-      name: 'notifications',
-      component: Notifications,
-    },
-    {
-      path: '/login',
-      name: 'login',
-      component: Login,
-    },
-    {
-      path: '/sign',
-      name: 'sign',
-      component: Sign,
+      path: '/school',
+      name: 'school',
+      component: School,
     },
   ],
 });

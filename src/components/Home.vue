@@ -1,32 +1,65 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>GO FUCK YOURSELF</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+   <body>
+
+  <img src="@/assets/logo2.png" class="logo">
+
+  <h1 class="pageTitle">All Tasks</h1>
+
+
+
+<h2>December 5th, 2018</h2>
+
+<main class="task-list">
+<label class="container fix1">Walk the dog
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container fix1">Call the dry cleaners
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container fix1">Order invitations
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container fix2">Check stats again
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container fix2">Fax Lena the files
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+  </label>
+
+  <label class="container fix3">Complete questions 1-12 pg.342
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+</label>
+
+    <label class="container fix3">Finish essay
+      <input type="checkbox" checked="checked">
+      <span class="checkmark"></span>
+</label>
+
+</main>
+
+<div class="nav">
+<a  href="#workTasks"><button class="btn1"><i  class="fa fa-home"></i></button></a>
+<a  href="Mainscreen.html"><button class="btn2"><i  class="fa fa-calendar"></i></button></a>
+<a  href="Mainscreen.html"><button class="btn3"><i  class="fa fa-plus"></i></button></a>
+<a  href="Mainscreen.html"><button class="btn4"><i  class="fa fa-suitcase"></i></button></a>
+<a  href="Mainscreen.html" ><button class="btn5"><i  class="fa fa-pencil"></i></button></a>
+</div>
+
+<a name="workTasks"></a>
+
+</body>
   </div>
 </template>
 
@@ -41,18 +74,317 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+body {
+  background-color: #fcfaf0;
+
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.pageTitle {
+  background-color: #2f3d4a;
+  color: white;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-family: 'Futura', arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+h2 {
+  font-family: 'Futura', arial, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: normal;
 }
+
+hr {
+  width: 40%;
+  border: solid black thin;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+}
+
+
 a {
-  color: #42b983;
+  text-decoration: none;
+  padding: 1em;
 }
+
+
+/* styles grid */
+ul {
+  font-family: 'Futura', arial, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* grid-gap: 1em; */
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 1em;
+  background-color: white;
+
+}
+
+/* makes grid appear */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  /* border: thin solid; */
+  padding: 1.5em;
+  /* background-color: white; */
+}
+
+/* styling done for weekday text */
+ul.weekdays abbr[title] {
+  font-family: 'Futura', arial, sans-serif;
+  border: none;
+  /* font-weight: bold; */
+  text-decoration: none;
+  /* max-width: 60em; */
+}
+
+abbr {
+  font-weight: bold;
+  font-size: 1.2
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.logo{
+  width: 30%;
+  display: block;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lastMonth {
+  color: white;
+}
+
+.day{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  border: thin solid;
+  padding: 1.5em;
+  background-color: transparent;
+  font-family: 'Futura', arial, sans-serif;
+  font-size: 1em;
+}
+
+
+/* Firsts Tasks CSS page */
+
+a.day {
+  color: black;
+  text-decoration: none;
+  /* padding: .5em; */
+}
+
+.add {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  list-style-type: square disc;
+  margin-bottom: 1em;
+}
+
+
+.addTsk{
+font-family: 'Futura', georgia, sans-serif;
+font-size: 1.5em;
+display: block;
+/* margin-right: 1em; */
+width: 100%;
+padding: 1.5em;
+background-color: #2f3d4a;
+position: absolute;
+margin-bottom: 500px;
+color: white;
+}
+
+
+.task-list{
+  list-style: none;
+  margin-left: 2em;
+  text-align: left;
+  font-size: 1em;
+  overflow: scroll;
+  margin-bottom: .8em;
+  font-family: 'Futura', georgia, sans-serif;
+
+}
+
+
+/* Home tasks */
+.fix1 {
+  background-color: #9a81bb;
+  padding: 0.5em;
+  margin: 1em;
+  display: block;
+  margin-right: auto;
+  background-size: 25%;
+
+}
+
+
+/* Work Tasks */
+.fix2 {
+  background-color: #52a580;
+  padding: 0.5em;
+  margin: 1em;
+  display: block;
+  margin-right: auto;
+}
+
+
+/* School Tasks */
+.fix3 {
+  background-color: #84a0d2;
+  padding: 0.5em;
+  margin: 1em;
+  display: block;
+  margin-right: auto;
+}
+
+.checkbox {
+  margin-bottom: 2em;
+  text-align: right;
+  height: 2em;
+  width: 2em;
+  background-color: white;
+
+}
+
+
+/* Bottom navigation */
+
+.nav {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns:20% 20% 20% 20% 20%;
+
+}
+.calendarnav {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns:20% 20% 20% 20% 20%;
+
+}
+.calendarbtn1{
+  background-color: #9A81BB;
+  color: white;
+  padding: 40px 75px;
+  font-size: 40px;
+  border:none;
+  position:relative;
+}
+.calendarbtn2{
+  background-color: #D6D671;
+  color: white;
+  padding: 40px 75px;
+  font-size: 40px;
+  border:none;
+  position:relative;
+}
+.calendarbtn3{
+  background-color: #2F3D4A;
+  color: white;
+  padding: 40px 75px;
+  font-size: 40px;
+  border:none;
+  position:relative;
+}
+.calendarbtn4{
+  background-color: #52A580;
+  color: white;
+  padding:40px 75px;
+  font-size: 40px;
+  border:none;
+  position:relative;
+}
+.calendarbtn5{
+  background-color: #85A0D2;
+  color: white;
+  padding: 40px 75px;
+  font-size: 40px;
+  border:none;
+  position:relative;
+}
+.btn1 {
+  background-color: #9A81BB;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  border:none;
+  position:absolute;
+}
+
+.btn2{
+  background-color: #D6D671;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  border:none;
+}
+.btn3{
+  background-color: #2F3D4A;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  border:none;
+
+}
+.btn4{
+  background-color: #52A580;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  border:none;
+
+}
+.btn5{
+  background-color: #85A0D2;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  border:none;
+
+}
+
+.home {
+  background-color: #9a81bb;
+  border-style: none;
+}
+
+.work {
+  background-color: #52a580;
+  border-style: none;
+
+}
+
+.school {
+  background-color: #84a0d2;
+  border-style: none;
+}
+
+/* Bottom Navigation ^^^^ */
 </style>

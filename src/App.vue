@@ -2,15 +2,13 @@
   <div id="app">
     <div id="nav">
       <!-- GBC START -->
-        <!-- <img src="/assets/logo2.png" id="logo"> -->
+        <img src="/assets/logo2.png" id="logo">
       <!-- GBC END -->
       <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/all">All Tasks</router-link>
-      <router-link to="/important">Important Tasks</router-link>
-      <router-link to="/notifications">Notifications</router-link>
-      <router-link to="/login">Login</router-link>
-      <router-link to="/sign">Sign In</router-link>
+      <router-link to="/calendar">Calendar</router-link>
+      <router-link to="/add">Add</router-link>
+      <router-link to="/work">Work</router-link>
+      <router-link to="/school">School</router-link>
 
     </div>
     <router-view/>
