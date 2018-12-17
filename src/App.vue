@@ -2,9 +2,10 @@
   <div id="app">
     <div id="nav">
       <!-- GBC START -->
-        <img src="/assets/logo2.png" id="logo">
+        <img src="@/assets/logo2.png" id="logo">
       <!-- GBC END -->
       <router-link to="/">Home</router-link>
+      <router-link to="/home">Home</router-link>
       <router-link to="/calendar">Calendar</router-link>
       <router-link to="/add">Add</router-link>
       <router-link to="/work">Work</router-link>
@@ -22,17 +23,19 @@
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /* color: #2c3e50; */
+  color:black;
+  /* ^ almost all text on every page */
 }
 #nav {
-  padding: 0px;
-  height: 80px;
+  display: inline-block;
+  height:80px;
   width: 100%;
-  background-color: none;
+  background-color: pink;
   }
 
 #nav a {
@@ -46,7 +49,6 @@
 
 #logo {
   width: 30%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
