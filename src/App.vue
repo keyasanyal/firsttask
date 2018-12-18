@@ -2,14 +2,15 @@
   <div id="app">
     <div id="nav">
       <!-- GBC START -->
-        <img src="@/assets/logo2.png" id="logo">
       <!-- GBC END -->
+      
       <router-link to="/">Home</router-link>
       <router-link to="/home">Home</router-link>
       <router-link to="/calendar">Calendar</router-link>
       <router-link to="/add">Add</router-link>
       <router-link to="/work">Work</router-link>
       <router-link to="/school">School</router-link>
+      <img src="@/assets/logo2.png" id="logo">
 
     </div>
     <router-view/>
@@ -35,23 +36,23 @@
   display: inline-block;
   height:80px;
   width: 100%;
-  background-color: pink;
+  background-color: #2c3e50;
+  border: 2px solid black;
   }
 
 #nav a {
   font-weight: bold;
-  color: gray;
+  color:blue;
 }
 
 #nav a.router-link-exact-active {
-  color: black;
+  color: green;
 }
 
 #logo {
   width: 30%;
+  margin-top: 35px;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+  margin-right: 20px;
+} 
 </style>
